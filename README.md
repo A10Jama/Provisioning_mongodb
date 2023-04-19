@@ -41,7 +41,7 @@ sudo apt upgrade -y
 
 sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
 ```
-### We made this provisiondb.sh file with VScode, making sure it is in the same directory as the VagrantFile.
+### Make this provisiondb.sh file with VScode, making sure it is in the same directory as the VagrantFile.
 
 <img width="285" alt="Screenshot 2023-04-19 at 15 57 35" src="https://user-images.githubusercontent.com/129948378/233116436-2c0b3d65-7f1b-4e96-ac11-9f12fdcf9997.png">
 
