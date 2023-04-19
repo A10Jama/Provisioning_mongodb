@@ -12,7 +12,7 @@ rantfile
 <img width="759" alt="Screenshot 2023-04-19 at 15 51 21" src="https://user-images.githubusercontent.com/129948378/233114291-ea64ede0-323f-4e9a-826c-d56d12bdf349.png">
 
 ### Provisioning MongoDB
-1.  We create a new provision file for our db virtual machine, we name it `provisiondb.sh` and the contents are shown below :
+  We create a new provision file for our db virtual machine, we name it `provisiondb.sh` and the contents are shown below :
 
 ```
 # updates the package list on the Ubuntu system and installs the latest version of all packages.
@@ -40,3 +40,5 @@ sudo apt upgrade -y
 # installs the MongoDB package and its associated components, including the server, shell, router, and tools
 
 sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
+
+
