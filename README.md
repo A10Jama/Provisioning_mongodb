@@ -53,7 +53,7 @@ sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org
  
 <img width="696" alt="Screenshot 2023-04-19 at 16 01 01" src="https://user-images.githubusercontent.com/129948378/233117472-5cb8113f-8677-4f7a-83cd-5fa215c06a10.png">
 
-### then `vagrant ssh db` in our gitbash terminal, and once we are in, we do `sudo systemctl status mongod` to see if 
+### Then `vagrant ssh db` in our gitbash terminal, and once we are in, we do `sudo systemctl status mongod` to see if 
 the installation of MongoDB has in fact been automated. The result is seen as in the image below.
 
 <img width="622" alt="Screenshot 2023-04-19 at 13 57 27" src="https://user-images.githubusercontent.com/129948378/233117921-de4bb3b4-5f4c-4594-9e81-026fc2f4eca2.png">
