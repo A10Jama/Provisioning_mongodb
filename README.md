@@ -48,4 +48,11 @@ We made this provisiondb.sh file with VScode, making sure it is in the same dire
 On our VagrantFile we need to edit the config lines for db, and add a line for db.vm.provision "shell", path: "provisiondb.sh"
 <img width="427" alt="Screenshot 2023-04-19 at 15 57 59" src="https://user-images.githubusercontent.com/129948378/233116702-e16f31bb-c639-4000-b4c2-e0f906e731f9.png">
 
+ `cd` into our folder where the VagrantFile is located, we run `vagrant up db` to load our db virtual machine with our preconfigured shell script to install mongodb.
+<img width="696" alt="Screenshot 2023-04-19 at 16 01 01" src="https://user-images.githubusercontent.com/129948378/233117472-5cb8113f-8677-4f7a-83cd-5fa215c06a10.png">
+
+ then `vagrant ssh db` in our gitbash terminal, and once we are in, we do `sudo systemctl status mongod` to see if 
+the installation of MongoDB has in fact been automated. The result is seen as in the image below.
+
+
 
