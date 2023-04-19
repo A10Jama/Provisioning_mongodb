@@ -11,3 +11,32 @@ rantfile
 ### Virtual Machine(s) should be listed below in Virtualbox as such 
 <img width="759" alt="Screenshot 2023-04-19 at 15 51 21" src="https://user-images.githubusercontent.com/129948378/233114291-ea64ede0-323f-4e9a-826c-d56d12bdf349.png">
 
+### Provisioning MongoDB
+1.  We create a new provision file for our db virtual machine, we name it `provisiondb.sh` and the contents are shown below :
+
+```
+# updates the package list on the Ubuntu system and installs the latest version of all packages.
+
+sudo apt update -y
+
+# upgrades all installed packages to the latest version.
+
+sudo apt upgrade -y
+
+# adds  MongoDB  key so we can authenticate packages from MongoDB repository
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927
+
+# adds the MongoDB repository to the system's list of repositories
+
+echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+# We now update and upgrade again but now this includes the MongoDB repository and MongoDB to latest version
+
+sudo apt update -y
+
+sudo apt upgrade -y
+
+# installs the MongoDB package and its associated components, including the server, shell, router, and tools
+
+sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
